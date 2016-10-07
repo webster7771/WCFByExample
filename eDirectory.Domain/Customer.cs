@@ -1,4 +1,4 @@
-﻿using eDirectory.Service.Contract;
+﻿using eDirectory.Common.Dto;
 using System;
 using System.Collections.Generic;
 using System.Linq;

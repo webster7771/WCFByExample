@@ -4,11 +4,11 @@
   <PropertyGroup>
     <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
     <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
-    <ProjectGuid>{016702E7-F94B-4850-ADAB-C7F2585B64D8}</ProjectGuid>
+    <ProjectGuid>{CCA231D3-4E98-450E-901E-DF0CF83D79E4}</ProjectGuid>
     <OutputType>Library</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>eDirectory.Data</RootNamespace>
-    <AssemblyName>eDirectory.Data</AssemblyName>
+    <RootNamespace>eDirectory.Common</RootNamespace>
+    <AssemblyName>eDirectory.Common</AssemblyName>
     <TargetFrameworkVersion>v4.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
   </PropertyGroup>
@@ -30,13 +30,11 @@
     <WarningLevel>4</WarningLevel>
   </PropertyGroup>
   <ItemGroup>
-    <Reference Include="Dapper, Version=1.50.2.0, Culture=neutral, processorArchitecture=MSIL">
-      <HintPath>..\packages\Dapper.1.50.2\lib\net40\Dapper.dll</HintPath>
-      <Private>True</Private>
-    </Reference>
     <Reference Include="System" />
-    <Reference Include="System.configuration" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
     <Reference Include="System.Core" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.ServiceModel" />
     <Reference Include="System.Xml.Linq" />
     <Reference Include="System.Data.DataSetExtensions" />
     <Reference Include="Microsoft.CSharp" />
@@ -44,23 +42,27 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Dto\CustomerDto.cs" />
+    <Compile Include="Dto\CustomerDtos.cs" />
+    <Compile Include="Messages\BusinessException.cs" />
+    <Compile Include="Messages\BusinessExceptionDto.cs" />
+    <Compile Include="Messages\BusinessExceptionEnum.cs" />
+    <Compile Include="Messages\BusinessWarning.cs" />
+    <Compile Include="Messages\BusinessWarningEnum.cs" />
+    <Compile Include="Messages\DataErrorInfo.cs" />
+    <Compile Include="Messages\DtoBase.cs" />
+    <Compile Include="Messages\DtoResponse.cs" />
+    <Compile Include="Messages\IBusinessExceptionManager.cs" />
+    <Compile Include="Messages\IBusinessWarningManager.cs" />
+    <Compile Include="Messages\ICommandDispatcher.cs" />
+    <Compile Include="Messages\IDtoResponseEnvelop.cs" />
+    <Compile Include="Messages\Response.cs" />
+    <Compile Include="Messages\ValidatorDtoBase.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryCustomerSql.cs" />
-    <Compile Include="RepositoryLocatorCustomerSql.cs" />
+    <Compile Include="ServiceContracts\IContract.cs" />
+    <Compile Include="ServiceContracts\ICustomerService.cs" />
   </ItemGroup>
-  <ItemGroup>
-    <ProjectReference Include="..\eDirectory.Domain\eDirectory.Domain.csproj">
-      <Project>{3d680cde-0c83-48db-9283-db23b7793c71}</Project>
-      <Name>eDirectory.Domain</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\eDirectory.Naive\eDirectory.Naive.csproj">
-      <Project>{0f35ed8c-ea1b-421e-b947-316218e3e165}</Project>
-      <Name>eDirectory.Naive</Name>
-    </ProjectReference>
-  </ItemGroup>
-  <ItemGroup>
-    <None Include="packages.config" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

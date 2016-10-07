@@ -55,9 +55,14 @@
   <ItemGroup>
     <Compile Include="CustomerServiceTests.cs" />
     <Compile Include="CustomerTests.cs" />
+    <Compile Include="InfrastructureTests.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\eDirectory.Common\eDirectory.Common.csproj">
+      <Project>{CCA231D3-4E98-450E-901E-DF0CF83D79E4}</Project>
+      <Name>eDirectory.Common</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eDirectory.Data\eDirectory.Data.csproj">
       <Project>{016702e7-f94b-4850-adab-c7f2585b64d8}</Project>
       <Name>eDirectory.Data</Name>
@@ -69,10 +74,6 @@
     <ProjectReference Include="..\eDirectory.Naive\eDirectory.Naive.csproj">
       <Project>{0f35ed8c-ea1b-421e-b947-316218e3e165}</Project>
       <Name>eDirectory.Naive</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\eDirectory.Service.Contract\eDirectory.Service.Contract.csproj">
-      <Project>{BE7806D7-8385-4461-8E38-B71E7628C59A}</Project>
-      <Name>eDirectory.Service.Contract</Name>
     </ProjectReference>
     <ProjectReference Include="..\eDirectory.Service\eDirectory.Service.csproj">
       <Project>{C4654409-9593-4F43-96EF-79ABDF9298C7}</Project>

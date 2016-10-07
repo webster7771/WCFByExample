@@ -42,7 +42,6 @@
     <Compile Include="RepositoryCustomer.cs" />
     <Compile Include="RepositoryEntityStore.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="RepositoryLocatorBase.cs" />
     <Compile Include="RepositoryLocatorCustomer.cs" />
   </ItemGroup>
   <ItemGroup>

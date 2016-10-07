@@ -1,8 +1,8 @@
 ﻿using System;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using eDirectory.Naive;
-using eDirectory.Service.Contract;
 using eDirectory.Domain;
+using eDirectory.Common.Dto;
 
 namespace eDirectory.Test
 {

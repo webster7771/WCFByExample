@@ -1,5 +1,5 @@
-﻿using eDirectory.Service;
-using eDirectory.Service.Contract;
+﻿using eDirectory.Common.Dto;
+using eDirectory.Service;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 using System;
 using System.Collections.Generic;

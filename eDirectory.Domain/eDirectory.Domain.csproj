@@ -43,11 +43,12 @@
     <Compile Include="IRepository.cs" />
     <Compile Include="IRepositoryLocator.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="RepositoryLocatorBase.cs" />
   </ItemGroup>
   <ItemGroup>
-    <ProjectReference Include="..\eDirectory.Service.Contract\eDirectory.Service.Contract.csproj">
-      <Project>{be7806d7-8385-4461-8e38-b71e7628c59a}</Project>
-      <Name>eDirectory.Service.Contract</Name>
+    <ProjectReference Include="..\eDirectory.Common\eDirectory.Common.csproj">
+      <Project>{cca231d3-4e98-450e-901e-df0cf83d79e4}</Project>
+      <Name>eDirectory.Common</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />

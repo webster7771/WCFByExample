@@ -43,6 +43,14 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\eDirectory.Common\eDirectory.Common.csproj">
+      <Project>{cca231d3-4e98-450e-901e-df0cf83d79e4}</Project>
+      <Name>eDirectory.Common</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\eDirectory.Data\eDirectory.Data.csproj">
+      <Project>{016702E7-F94B-4850-ADAB-C7F2585B64D8}</Project>
+      <Name>eDirectory.Data</Name>
+    </ProjectReference>
     <ProjectReference Include="..\eDirectory.Domain\eDirectory.Domain.csproj">
       <Project>{3d680cde-0c83-48db-9283-db23b7793c71}</Project>
       <Name>eDirectory.Domain</Name>
@@ -50,10 +58,6 @@
     <ProjectReference Include="..\eDirectory.Naive\eDirectory.Naive.csproj">
       <Project>{0f35ed8c-ea1b-421e-b947-316218e3e165}</Project>
       <Name>eDirectory.Naive</Name>
-    </ProjectReference>
-    <ProjectReference Include="..\eDirectory.Service.Contract\eDirectory.Service.Contract.csproj">
-      <Project>{be7806d7-8385-4461-8e38-b71e7628c59a}</Project>
-      <Name>eDirectory.Service.Contract</Name>
     </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
